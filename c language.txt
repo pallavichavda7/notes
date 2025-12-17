@@ -1,0 +1,144 @@
+#include <stdio.h>
+
+#include<string.h>
+#include<math.h>
+
+int main(){
+    printf("Hello World \n");
+    printf("many lines print example \n");
+    printf("for new tab horizontal \t");
+    printf("to add backslash\\");
+    printf("for double quote character\"newbie\".\n");
+
+//variable declaration   
+ /* int myNum = 50;
+  printf(myNum);
+  this code doesn't run because for print you need to specify the formate or not use of formate spacifer*/
+  
+//formate spacifer & variable types  
+ int myNewnum = 25;
+ printf("%d\n", myNewnum);
+ printf("%i\n", myNewnum);
+
+float myfloatNum = 6.99 ;
+printf("%f\n", myfloatNum);
+  
+double myNumb = 22E5 ;
+printf("%lf\n",myNumb);
+
+char myLetter = 'P';
+printf("%c\n", myLetter); 
+
+char sTring[] = "pallavi";
+printf("%s\n" , sTring);
+
+//addition of strings
+char str1[20] = "pallavi";
+char str2[] = "chavda";
+strcat(str1,str2);
+printf("%s\n",str1);
+
+// assign diffrent value to same variable
+int myNumber = 25;
+int myotherNumber = 12;
+printf("%d\n", myotherNumber);
+
+
+//declare 2 variable of int and do addition of that 2 number
+int a = 56;
+int b = 25;
+int sum = a + b ;
+printf("%d\n",sum);
+
+
+// SCANER
+int  a,b;
+    printf("enter the 1st number\n");
+    scanf("%i",& a);
+    printf("enter the 2nd number\n");
+    scanf("%i",& b);
+    
+    
+// + addition
+    printf("a + b %d\n",a + b);
+
+// - subtraction
+    printf("a - b %d\n",a - b);
+
+// * multiplication
+    printf("a * b %d\n",a * b);
+
+// / division
+    printf("a / b %d\n",a / b);
+
+// % modulus
+    printf("a %% b %d\n",a % b);
+
+//examle
+  int A = 2, B = 3, C = 4, D = 5 ;
+  printf("A * B / C = %d\n", A*B/C);
+  printf("A + B - C = %d\n", A+B-C);
+  printf("A + B * D - C %% A = %d\n", A+B*D-C%A);
+
+   int a,b,option;
+    printf("enter the 1st number\n");
+    scanf("%i",& a);
+    printf("enter the 2nd number\n");
+    scanf("%i",& b);
+    printf("\nPress 1 for addition ");
+    printf("\nPress 2 for subtraction ");
+    printf("\nPress 3 for multiplication ");
+    printf("\nPress 4 for division");
+    printf("\nPress 5 for modulus");
+    printf("\nEnter your choice");
+    scanf("%d",&option);
+    switch(option)
+    { // + addition
+     case 1 :
+      printf("sum = %d\n",a + b);
+      break;
+        
+    
+    // - subtraction
+     case 2 :
+     printf("subtraction = %d\n",a - b);
+    break;
+        
+    
+   // * multiplication
+     case 3 :
+     printf("multiplication = %d\n",a * b);
+     break; 
+       
+   
+   // / division
+     case 4:
+     printf("division %d\n",a / b);
+     break;
+        
+       
+   // % modulus
+     case 5 :
+     printf("modulus %d\n",a % b);  
+    break;
+   
+     default:
+     printf("enter a valid value");
+     
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
+
